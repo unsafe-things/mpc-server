@@ -527,7 +527,7 @@ dependencies = [
 
 [[package]]
 name = "mpc-websocket"
-version = "0.5.0"
+version = "0.6.0"
 dependencies = [
  "async-trait",
  "futures-util",
