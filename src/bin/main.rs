@@ -22,7 +22,7 @@ struct Options {
 #[tokio::main]
 async fn main() -> Result<()> {
     let opts: Options = Parser::parse();
-    let bind = opts.bind.unwrap_or_else(|| "127.0.0.1:3030".to_string());
+    let bind = opts.bind.unwrap_or_else(|| "127.0.0.1:3000".to_string());
     let addr = SocketAddr::from_str(&bind)?;
 
     let static_files = if let Some(static_files) = opts.files {
